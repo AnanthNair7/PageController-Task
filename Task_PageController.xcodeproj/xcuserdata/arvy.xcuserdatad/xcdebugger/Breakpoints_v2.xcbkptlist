@@ -3,4 +3,102 @@
    uuid = "A8668F7A-C88B-490D-93A6-13D8800265C6"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "824B3C2F-9F82-4A24-A401-CE2D6A792DEF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task_PageController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "secondPageCondition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "824B3C2F-9F82-4A24-A401-CE2D6A792DEF - ecc77ed1697fba78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task_PageController.ViewController.secondPageCondition() -&gt; ()"
+                  moduleName = "Task_PageController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arvy/Desktop/IOS-Green/IOS-Development/IOS-Concept/Task_PageController/Task_PageController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "255"
+                  endingLineNumber = "255"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "824B3C2F-9F82-4A24-A401-CE2D6A792DEF - ecc77ed1697fba57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task_PageController.ViewController.secondPageCondition() -&gt; ()"
+                  moduleName = "Task_PageController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arvy/Desktop/IOS-Green/IOS-Development/IOS-Concept/Task_PageController/Task_PageController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "256"
+                  endingLineNumber = "256"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A8AA2ED-BC41-468A-862F-BF2027AABFF4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task_PageController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
+            landmarkName = "secondPageCondition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A8AA2ED-BC41-468A-862F-BF2027AABFF4 - ecc77ed1697fba91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task_PageController.ViewController.secondPageCondition() -&gt; ()"
+                  moduleName = "Task_PageController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arvy/Desktop/IOS-Green/IOS-Development/IOS-Concept/Task_PageController/Task_PageController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "9A8AA2ED-BC41-468A-862F-BF2027AABFF4 - ecc77ed1697fba91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Task_PageController.ViewController.secondPageCondition() -&gt; ()"
+                  moduleName = "Task_PageController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arvy/Desktop/IOS-Green/IOS-Development/IOS-Concept/Task_PageController/Task_PageController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

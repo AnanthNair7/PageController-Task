@@ -38,18 +38,19 @@ class ViewController: UIViewController {
         previousButtonTapped.isHidden = true
         donebuttonTapped.isHidden = true
         firstPageCondition()
+      //  secondPageCondition()
         
         // MARK: - Color in text
         
         
         
-//        let txt = firstLabelArray[0]
-//        print(txt)
-//        let colorchange = NSMutableAttributedString(string: txt)
-//        let termsRange = (txt as NSString).range(of: "24 Hours")
-//        colorchange.addAttribute(.foregroundColor, value: UIColor.red, range: termsRange)
-//        firstLabel.attributedText = colorchange
-//        print(firstLabel.attributedText!)
+        //        let txt = firstLabelArray[0]
+        //        print(txt)
+        //        let colorchange = NSMutableAttributedString(string: txt)
+        //        let termsRange = (txt as NSString).range(of: "24 Hours")
+        //        colorchange.addAttribute(.foregroundColor, value: UIColor.red, range: termsRange)
+        //        firstLabel.attributedText = colorchange
+        //        print(firstLabel.attributedText!)
         
         //        firstLabelArray[0] = firstLabel.attributedText!.string
         //        print("array \(firstLabelArray[0])"  )
@@ -82,11 +83,12 @@ class ViewController: UIViewController {
             firstPageCondition()
             
         } else if pageControllerSwipe.currentPage == 1 {
-            firstLabel.text =  firstLabelArray[1]
-            secondLabel.text =  secondLabelArray[1]
-            thirdlabel.text = thirsLabelArray[1]
-            fourthlabel.text = fourthlabelArray[1]
-            imageWaterCan.image = imageArray[1]
+            //            firstLabel.text =  firstLabelArray[1]
+            //            secondLabel.text =  secondLabelArray[1]
+            //            thirdlabel.text = thirsLabelArray[1]
+            //            fourthlabel.text = fourthlabelArray[1]
+            //            imageWaterCan.image = imageArray[1]
+            secondPageCondition()
         }  else if pageControllerSwipe.currentPage == 2  {
             firstLabel.text = firstLabelArray[2]
             secondLabel.text =  secondLabelArray[2]
@@ -111,7 +113,7 @@ class ViewController: UIViewController {
                 thirdlabel.text = thirsLabelArray[pageControllerSwipe.currentPage]
                 fourthlabel.text = fourthlabelArray[pageControllerSwipe.currentPage]
                 imageWaterCan.image = imageArray[pageControllerSwipe.currentPage]
-                 
+                
                 if   pageControllerSwipe.currentPage == 1 || pageControllerSwipe.currentPage == 0 {
                     skipBtn.isHidden = false
                     nextButtonTapped.isHidden = false
@@ -121,13 +123,16 @@ class ViewController: UIViewController {
                     previousButtonTapped.isHidden = true
                     firstPageCondition()
                 }
+                if pageControllerSwipe.currentPage == 1 {
+                    secondPageCondition()
+                }
                 
             }  else  if  swipeGesture.direction == UISwipeGestureRecognizer.Direction.left {
                 if pageControllerSwipe.numberOfPages > pageControllerSwipe.currentPage {
-                    print(pageControllerSwipe.currentPage)
-                    print(pageControllerSwipe.numberOfPages)
+                    // print(pageControllerSwipe.currentPage)
+                    //  print(pageControllerSwipe.numberOfPages)
                     pageControllerSwipe.currentPage = pageControllerSwipe.currentPage + 1
-                    print(pageControllerSwipe.currentPage)
+                    //   print(pageControllerSwipe.currentPage)
                     firstLabel.text = firstLabelArray[pageControllerSwipe.currentPage]
                     secondLabel.text = secondLabelArray[pageControllerSwipe.currentPage]
                     thirdlabel.text = thirsLabelArray[pageControllerSwipe.currentPage]
@@ -143,6 +148,9 @@ class ViewController: UIViewController {
                 if pageControllerSwipe.currentPage == 1 || pageControllerSwipe.currentPage == 2 {
                     previousButtonTapped.isHidden = false
                     
+                }
+                if pageControllerSwipe.currentPage == 1 {
+                    secondPageCondition()
                 }
             }
             
@@ -222,20 +230,20 @@ class ViewController: UIViewController {
         
         
         let txt = firstLabelArray[0]
-      //  print(txt)
+        //  print(txt)
         let colorchange = NSMutableAttributedString(string: txt)
         let termsRange = (txt as NSString).range(of: "24 Hours")
         colorchange.addAttribute(.foregroundColor, value: UIColor.red, range: termsRange)
         firstLabel.attributedText = colorchange
-       // print(firstLabel.attributedText!)
+        // print(firstLabel.attributedText!)
         
         let txt1 = fourthlabelArray[0]
-        print(txt1)
+        //  print(txt1)
         let colorchange1 = NSMutableAttributedString(string: txt1)
         let termsRange1 = (txt1 as NSString).range(of: "24 hours")
         colorchange1.addAttribute(.foregroundColor, value: UIColor.blue, range: termsRange1)
         fourthlabel.attributedText = colorchange1
-        print("fourth :----  \(fourthlabel.attributedText!)")
+        // print("fourth :----  \(fourthlabel.attributedText!)")
         
         
         //firstLabel.text = firstLabelArray[0]
@@ -247,6 +255,22 @@ class ViewController: UIViewController {
         imageWaterCan.image = imageArray[0]
         
         
+    }
+    
+    
+    func secondPageCondition(){
+        let txt2 = fourthlabelArray[1]
+        print(txt2)
+        let colorchange2 = NSMutableAttributedString(string: txt2)
+        let termsRange2 = (txt2 as NSString).range(of: "20 times")
+        colorchange2.addAttribute(.foregroundColor, value: UIColor.blue, range: termsRange2)
+        fourthlabel.attributedText = colorchange2
+        print("fourth :----  \(fourthlabel.attributedText!)")
+        firstLabel.text =  firstLabelArray[1]
+        secondLabel.text =  secondLabelArray[1]
+        thirdlabel.text = thirsLabelArray[1]
+        fourthlabel.attributedText
+        imageWaterCan.image = imageArray[1]
     }
     
 }
